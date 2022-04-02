@@ -1,5 +1,5 @@
 const {readFile , writeFile} = require("fs").promises
-const {readFileSync , writeFileSync,} =require("fs")
+const {readFileSync , writeFileSync, utimesSync,} =require("fs")
 
      // synchruond approach 
 const first  = readFileSync("./content/first.txt","utf8")
@@ -41,9 +41,6 @@ readFile("./content/third.txt","utf8", (err,result)=>{ // utf convert buffer int
   } )
   })
 })
-
-
-
 
 
 
